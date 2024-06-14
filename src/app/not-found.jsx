@@ -13,7 +13,7 @@ function notFoundPage() {
           Uh-oh!
         </h1>
 
-        <p className="mt-4 text-gray-500">We can&apos;t find that page.</p>
+        <p className="mt-4 text-gray-500">We cant find that page.</p>
 
         <Link href={"/"}>
           <button className="p-3 bg-accent text-white mt-3 rounded-md">
