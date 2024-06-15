@@ -17,7 +17,7 @@ function News() {
     const variants = {
         initial: {
           opacity: 0,
-          x:500
+          x:100
         },
         animate: {
           opacity: 1,
@@ -31,7 +31,7 @@ function News() {
       const variantsx = {
         initial: {
           opacity: 0,
-          x:-500
+          x:-100
         },
         animate: {
           opacity: 1,

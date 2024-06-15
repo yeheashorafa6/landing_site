@@ -25,8 +25,8 @@ function About() {
       const variantsy = {
         initial: {
           opacity: 0,
-          y: 300,
-          x:-500
+          y: 100,
+          x:-100
         },
         animate: {
           opacity: 1,
@@ -55,7 +55,7 @@ function About() {
                         <div className="lg:py-12 py-8 text-center lg:text-start">
                             <h2 className="text-3xl font-bold sm:text-4xl">We Create The Art Of Stylish Living Stylishly</h2>
 
-                            <p className="mt-4 text-gray-500 max-w-md text-center lg:text-start ml-32">
+                            <p className="mt-4 text-gray-500 max-w-md mx-auto text-center lg:text-start">
                             It is a long established fact that a reader will be distracted by the of readable content of a page 
                             when lookings at its layouts the points of using 
                             that it has a more-or-less normal.
