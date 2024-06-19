@@ -9,7 +9,7 @@ function About() {
     const variantsx = {
         initial: {
           opacity: 0,
-          y: -600,
+          y: -100,
           x:200
         },
         animate: {

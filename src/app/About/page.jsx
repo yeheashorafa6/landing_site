@@ -1,9 +1,23 @@
+"use client"
 import Image from 'next/image'
 import React from 'react'
-
+import { motion } from 'framer-motion'
 function AboutPage() {
+  const variants = {
+    initial: {
+      opacity: 0,
+      x:100
+    },
+    animate: {
+      opacity: 1,
+      x:0,
+      transition: {
+        duration : 1,
+      },
+    },
+  }
   return (
-    <section>
+    <motion.section variants={variants} initial="initial" whileInView="animate">
       <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
         <div className="max-w-3xl">
           <h2 className="text-3xl font-bold sm:text-4xl">
@@ -40,7 +54,7 @@ function AboutPage() {
           </div>
         </div>
       </div>
-  </section>
+  </motion.section>
   )
 }
 

@@ -6,19 +6,13 @@ import Navlist from './Navlist/Navlist'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBarsStaggered } from '@fortawesome/free-solid-svg-icons'
 import { motion } from "framer-motion"
+import {navbarItems} from "./../../../data/index";
+
 function Navbar() {
   // STATE
   const [openMenu, setOpenMenu] = useState(false);
   // == STATE ==
-  
-  const items =[
-    {id : 1 , title : "Home"},
-    {id : 2 , title : "About"},
-    {id : 3 , title : "Testimonials"},
-    {id : 4 , title : "OurWorks"},
-    {id : 5 , title : "News"},
-    {id : 6 , title : "Contacts"}
-   ]
+
 
   //  FUNCTIONS
 
@@ -36,7 +30,7 @@ function Navbar() {
           {/* LOGO */}
           <div>
               <Link href={"/"} >
-                <Image src={"/assets/logo.svg"}  width={200} height={200} alt='logo'/>
+                <Image src={"/assets/logo.png"}  width={80} height={80} alt='logo'/>
               </Link>
           </div> 
           {/* NAV */}
@@ -46,7 +40,7 @@ function Navbar() {
             </div>
             <ul className={`fixed flex w-full bg-white overflow-hidden border-t flex-col left-0 top-[90px] transition-all duration-500
              right-0 gap-5 lg:relative lg:flex-row lg:p-0  lg:top-0 lg:border-none lg:h-full ${openMenu === true ? 'h-[310px]' : 'h-0'} rounded-b-lg`}>
-              <Navlist items={items}/>
+              <Navlist items={navbarItems}/>
               
             </ul>
           </div>

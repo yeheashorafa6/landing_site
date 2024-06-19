@@ -11,58 +11,10 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import { motion } from "framer-motion";
+import {testimonialItems} from "./../../../data/index";
+
 
 function Testimonials() {
-  const items = [
-    {
-      id: 1,
-      name: "Nattasha Mith",
-      place: "Greenville, USA",
-      img: "/assets/testimonial/01.png",
-      subject:
-        "Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been.",
-    },
-    {
-      id: 2,
-      name: "Jessica White",
-      place: "Oak Ridge, USA",
-      img: "/assets/testimonial/02.png",
-      subject:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt.",
-    },
-    {
-      id: 3,
-      name: "Mike Davis",
-      place: "Berlin, Germany",
-      img: "/assets/testimonial/03.png",
-      subject:
-        "simply dummy text of the typesetting industry. Ipsum has been Lorem Ipsum is .",
-    },
-    {
-      id: 4,
-      name: "sara shorafa",
-      place: "Greenville, USA",
-      img: "/assets/testimonial/04.png",
-      subject:
-        "typesetting industry simply dummy text of the . Ipsum has been. text of the",
-    },
-    {
-      id: 5,
-      name: "eman ahmed",
-      place: "Greenville, USA",
-      img: "/assets/testimonial/02.png",
-      subject:
-        "Lorem Ipsum is simply dummy  typesetting industry. Ipsum has been.",
-    },
-    {
-      id: 6,
-      name: "Olivia Wilson",
-      place: "Blue Ridge, France",
-      img: "/assets/testimonial/03.png",
-      subject:
-        "dummy text of the typesetting Lorem Ipsum is simply industry. Ipsum has been.",
-    },
-  ];
 
   const variants = {
     initial: {
@@ -162,7 +114,7 @@ function Testimonials() {
               className="mt-8 h-80 w-full rounded-lg"
             >
               {
-              items.map((item) => (
+              testimonialItems.map((item) => (
                 <SwiperSlide key={item.id}>
                   <TestimonialsCard item={item} />
                 </SwiperSlide>
